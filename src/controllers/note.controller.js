@@ -25,3 +25,20 @@ export const newNote = async (req, res, next) => {
     });
   }
 };
+
+//Controller to update note by id
+export const updateNoteById = async (req, res, next) => {
+    try {
+      const data = await NoteService.updateNoteById(req.params._id, req.body);
+      res.status(HttpStatus.ACCEPTED).json({
+        code: HttpStatus.ACCEPTED,
+        data: data,
+        message: 'Note updated successfully'
+      });
+    } catch (error) {
+      res.status(HttpStatus.BAD_REQUEST).json({
+        code: HttpStatus.BAD_REQUEST,
+        message: `${error}`
+      });
+    }
+  };

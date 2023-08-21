@@ -7,4 +7,7 @@ const router = express.Router();
 //route to create a new user
 router.post('', userAuth, NoteController.newNote);
 
+//route to update note by id
+router.put('/:_id', userAuth, NoteController.updateNoteById);
+
 export default router;
