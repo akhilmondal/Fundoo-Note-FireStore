@@ -11,17 +11,9 @@ const db = firebase.firestore();
 //create new user
 export const newUser = async (id, firstName, lastName, emailId, passWord) => {
   const collectionRef = db.collection('User');
-
-  // Query for the email
   const querySnapshot = await collectionRef
     .where('emailId', '==', emailId)
     .get();
-  querySnapshot.forEach((doc) => {
-    const data = doc.data(); // Actual data of the document
-    console.log('Document ID:', doc.id);
-    console.log('Document Data:', data);
-    // Now you can access individual fields using data.fieldName
-  });
   if (!querySnapshot.empty) {
     throw new Error('User is already Present');
   } else {
@@ -37,11 +29,7 @@ export const newUser = async (id, firstName, lastName, emailId, passWord) => {
       passWord
     );
     const data = await User.add(user.toFirestore());
-
-    //getting unformatted response from the firestore database
     const docSnapshot = await data.get();
-
-    //passing that whole data into the function to filter out only required data.
     const addedUser = userModel.getUserFromFirestore(docSnapshot);
     return addedUser;
   }
@@ -50,13 +38,10 @@ export const newUser = async (id, firstName, lastName, emailId, passWord) => {
 //Service for login user
 export const userLogin = async (emailId, passWord) => {
   const collectionRef = db.collection('User');
-
-  // Query for the email
   const querySnapshot = await collectionRef
     .where('emailId', '==', emailId)
     .get();
-
-  const firstDocument = querySnapshot.docs[0]; // Get the first QueryDocumentSnapshot
+  const firstDocument = querySnapshot.docs[0];
   const data = firstDocument.data();
   if (data) {
     if (bcrypt.compareSync(passWord, data.passWord)) {

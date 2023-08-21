@@ -35,7 +35,6 @@ export const userLogin = async (req, res, next) => {
   try {
     let { emailId, passWord } = req.body;
     const data = await UserService.userLogin(emailId, passWord);
-    console.log(data,'-----------------');
     res.status(HttpStatus.CREATED).json({
       code: HttpStatus.CREATED,
       data: data,
