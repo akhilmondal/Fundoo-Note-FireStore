@@ -1,1 +1,122 @@
 info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T06:20:44.748Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T06:32:57.626Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T06:34:39.077Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T06:35:03.521Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T06:35:23.143Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T06:36:00.306Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T06:37:00.528Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T06:51:31.688Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T06:51:53.918Z"}
+error: 
+    status - 500 
+    message - ReferenceError: HttpStatus is not defined
+    at newUserValidator (/home/akhil/CFP238/FireBase Project/FundooNote-FireStore/src/validators/user.validator.js:23:16)
+    at Layer.handle [as handle_request] (/home/akhil/CFP238/FireBase Project/FundooNote-FireStore/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/akhil/CFP238/FireBase Project/FundooNote-FireStore/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/akhil/CFP238/FireBase Project/FundooNote-FireStore/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/akhil/CFP238/FireBase Project/FundooNote-FireStore/node_modules/express/lib/router/layer.js:95:5)
+    at /home/akhil/CFP238/FireBase Project/FundooNote-FireStore/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/akhil/CFP238/FireBase Project/FundooNote-FireStore/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/akhil/CFP238/FireBase Project/FundooNote-FireStore/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/akhil/CFP238/FireBase Project/FundooNote-FireStore/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/akhil/CFP238/FireBase Project/FundooNote-FireStore/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/akhil/CFP238/FireBase Project/FundooNote-FireStore/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/akhil/CFP238/FireBase Project/FundooNote-FireStore/node_modules/express/lib/router/index.js:328:13)
+    at /home/akhil/CFP238/FireBase Project/FundooNote-FireStore/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/akhil/CFP238/FireBase Project/FundooNote-FireStore/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/akhil/CFP238/FireBase Project/FundooNote-FireStore/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/akhil/CFP238/FireBase Project/FundooNote-FireStore/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/akhil/CFP238/FireBase Project/FundooNote-FireStore/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/akhil/CFP238/FireBase Project/FundooNote-FireStore/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/akhil/CFP238/FireBase Project/FundooNote-FireStore/node_modules/express/lib/router/index.js:328:13)
+    at /home/akhil/CFP238/FireBase Project/FundooNote-FireStore/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/akhil/CFP238/FireBase Project/FundooNote-FireStore/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/akhil/CFP238/FireBase Project/FundooNote-FireStore/node_modules/express/lib/router/index.js:280:10)
+    at logger (/home/akhil/CFP238/FireBase Project/FundooNote-FireStore/node_modules/morgan/index.js:144:5)
+    at Layer.handle [as handle_request] (/home/akhil/CFP238/FireBase Project/FundooNote-FireStore/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/akhil/CFP238/FireBase Project/FundooNote-FireStore/node_modules/express/lib/router/index.js:328:13)
+    at /home/akhil/CFP238/FireBase Project/FundooNote-FireStore/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/akhil/CFP238/FireBase Project/FundooNote-FireStore/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/akhil/CFP238/FireBase Project/FundooNote-FireStore/node_modules/express/lib/router/index.js:280:10)
+    at /home/akhil/CFP238/FireBase Project/FundooNote-FireStore/node_modules/body-parser/lib/read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:202:9)
+    at invokeCallback (/home/akhil/CFP238/FireBase Project/FundooNote-FireStore/node_modules/raw-body/index.js:231:16)
+    at done (/home/akhil/CFP238/FireBase Project/FundooNote-FireStore/node_modules/raw-body/index.js:220:7)
+    at IncomingMessage.onEnd (/home/akhil/CFP238/FireBase Project/FundooNote-FireStore/node_modules/raw-body/index.js:280:7)
+    at IncomingMessage.emit (node:events:539:35)
+    at IncomingMessage.emit (node:domain:475:12)
+    at endReadableNT (node:internal/streams/readable:1345:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) 
+    url - /api/v1/users 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-08-21T06:52:50.949Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T06:53:20.969Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T07:06:07.755Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T07:06:56.641Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T07:07:36.325Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T07:09:19.334Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T07:10:17.403Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T07:11:03.996Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T07:11:33.832Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T07:11:56.655Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T07:12:19.590Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T07:12:56.622Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T07:13:19.162Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T07:15:13.540Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T07:16:53.922Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T07:24:14.355Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T07:25:04.105Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T07:26:11.793Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T07:26:14.294Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T07:26:54.289Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T07:29:27.706Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T07:30:12.246Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T07:34:17.718Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T07:34:38.775Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T07:34:59.804Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T07:35:22.391Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T07:36:00.807Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T07:40:08.426Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T07:41:01.006Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T07:41:48.890Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T07:42:58.637Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T07:45:07.647Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T07:49:50.977Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T07:50:19.850Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T07:51:08.140Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T07:51:29.222Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T07:51:36.117Z"}
+                                                                                                                                                                                              info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T08:21:33.495Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T08:22:56.082Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T08:23:43.176Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T08:24:08.061Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T08:24:52.552Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T08:33:03.652Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T08:34:42.825Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T08:35:56.268Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T08:39:42.928Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T08:41:16.017Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T08:45:12.013Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T08:46:42.659Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T08:47:00.343Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T08:47:11.594Z"}
+                                                                                                                                                                                              info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T08:49:33.374Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T08:52:00.975Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T08:52:27.842Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T08:52:37.951Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T08:56:23.830Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T08:56:30.441Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T08:57:13.000Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T08:57:47.528Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T08:57:51.106Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T08:58:09.058Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T08:58:39.936Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T09:02:28.316Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T09:02:57.002Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T09:03:18.599Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T09:05:08.735Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T09:06:57.835Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T09:09:18.115Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T09:09:40.382Z"}
+info: Server started at http://localhost:3005/api/v1/ {"timestamp":"2023-08-21T09:09:49.803Z"}

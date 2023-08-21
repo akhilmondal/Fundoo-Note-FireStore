@@ -9,8 +9,14 @@ import * as UserService from '../services/user.service';
  */
 export const newUser = async (req, res, next) => {
   try {
-    let { id, fullName, emailId, passWord } = req.body;
-    const data = await UserService.newUser(id, fullName, emailId, passWord);
+    let { id, firstName, lastName, emailId, passWord } = req.body;
+    const data = await UserService.newUser(
+      id,
+      firstName,
+      lastName,
+      emailId,
+      passWord
+    );
     res.status(HttpStatus.CREATED).json({
       code: HttpStatus.CREATED,
       data: data,
