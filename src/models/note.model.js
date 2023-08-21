@@ -19,6 +19,7 @@ function createNote(id, title, description, color, trash, archive, createdBy) {
     }
   };
 }
+
 //Returning the response in proper format
 function getNoteFromFirestore(doc) {
   const data = doc.data();

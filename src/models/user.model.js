@@ -15,6 +15,7 @@ function createUser(id, firstName, lastName, emailId, passWord) {
     }
   };
 }
+
 //Returning the response in proper format
 function getUserFromFirestore(doc) {
   const data = doc.data();

@@ -21,22 +21,21 @@ export const newNote = async (
     createdBy
   );
   const data = await Note.add(note.toFirestore());
-
-  //getting unformatted response from the firestore database
   const docSnapshot = await data.get();
-
-  //passing that whole data into the function to filter out only required data.
   const addedNote = noteModel.getNoteFromFirestore(docSnapshot);
   return addedNote;
 };
 
 //service for update note
 export const updateNoteById = async (id, body) => {
-  //searching for the document with id and updating with new data of body.
   await Note.doc(id).update(body);
-  //Fetching the whole data.
   const docSnapshot = await Note.doc(id).get();
-  //formating it for a proper response.
   const updatedNote = noteModel.getNoteFromFirestore(docSnapshot);
   return updatedNote;
+};
+
+//service to delete note
+export const deleteNoteById = async (id) => {
+  await Note.doc(id).delete(); 
+  return '';
 };

@@ -10,4 +10,7 @@ router.post('', userAuth, NoteController.newNote);
 //route to update note by id
 router.put('/:_id', userAuth, NoteController.updateNoteById);
 
+//delete note by Id
+router.delete('/:_id', userAuth, NoteController.deleteNoteById);
+
 export default router;
