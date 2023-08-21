@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
 dotenv.config();
 import firebase from 'firebase';
-import User from '../config/firestore';
+import { User } from '../config/firestore';
 import userModel from '../models/user.model';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
@@ -55,6 +55,7 @@ export const userLogin = async (emailId, passWord) => {
   const querySnapshot = await collectionRef
     .where('emailId', '==', emailId)
     .get();
+
   const firstDocument = querySnapshot.docs[0]; // Get the first QueryDocumentSnapshot
   const data = firstDocument.data();
   if (data) {
