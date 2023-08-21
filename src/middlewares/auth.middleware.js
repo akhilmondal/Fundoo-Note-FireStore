@@ -1,3 +1,5 @@
+import dotenv from 'dotenv';
+dotenv.config();
 import HttpStatus from 'http-status-codes';
 import jwt from 'jsonwebtoken';
 
@@ -19,11 +21,13 @@ export const userAuth = async (req, res, next) => {
       };
     bearerToken = bearerToken.split(' ')[1];
 
-    const { user } = await jwt.verify(bearerToken, 'your-secret-key');
-    res.locals.user = user;
-    res.locals.token = bearerToken;
+    const user = await jwt.verify(bearerToken, process.env.SECRET_KEY);
+    req.body.createdBy = user.id;
     next();
   } catch (error) {
-    next(error);
+    res.status(HttpStatus.BAD_REQUEST).json({
+      code: HttpStatus.BAD_REQUEST,
+      message: `${error}`
+    });
   }
 };
