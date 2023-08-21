@@ -1,7 +1,7 @@
-import firebase from 'firebase'; // Import Firebase
-
+import firebase from 'firebase';
 import User from '../config/firestore';
 import userModel from '../models/user.model';
+import bcrypt from 'bcrypt';
 const db = firebase.firestore();
 
 //create new user
@@ -16,6 +16,10 @@ export const newUser = async (id, firstName, lastName, emailId, passWord) => {
   if (!querySnapshot.empty) {
     throw new Error('User is already Present');
   } else {
+    const saltRounds = 10;
+    const salt = bcrypt.genSaltSync(saltRounds);
+    const hash = bcrypt.hashSync(passWord, salt);
+    passWord = hash;
     const user = userModel.createUser(
       id,
       firstName,
