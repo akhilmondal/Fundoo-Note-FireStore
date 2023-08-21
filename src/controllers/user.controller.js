@@ -29,3 +29,22 @@ export const newUser = async (req, res, next) => {
     });
   }
 };
+
+//Controller for user login
+export const userLogin = async (req, res, next) => {
+  try {
+    let { emailId, passWord } = req.body;
+    const data = await UserService.userLogin(emailId, passWord);
+    console.log(data,'-----------------');
+    res.status(HttpStatus.CREATED).json({
+      code: HttpStatus.CREATED,
+      data: data,
+      message: 'User loggedin successfully'
+    });
+  } catch (error) {
+    res.status(HttpStatus.BAD_REQUEST).json({
+      code: HttpStatus.BAD_REQUEST,
+      message: `${error}`
+    });
+  }
+};
