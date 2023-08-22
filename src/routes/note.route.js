@@ -16,4 +16,7 @@ router.delete('/:_id', userAuth, NoteController.deleteNoteById);
 //route to get all note
 router.get('', userAuth, NoteController.getAllNotes);
 
+//archive note by id
+router.put('/archive/:_id', userAuth, NoteController.archiveNoteById);
+
 export default router;

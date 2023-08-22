@@ -76,3 +76,20 @@ export const getAllNotes = async (req, res, next) => {
     });
   }
 };
+
+//Controller for Archive Note
+export const archiveNoteById = async (req, res, next) => {
+  try {
+    const data = await NoteService.archiveNoteById(req.params._id, req.body);
+    res.status(HttpStatus.OK).json({
+      code: HttpStatus.OK,
+      data: data,
+      message: 'Note archived successfully'
+    });
+  } catch (error) {
+    res.status(HttpStatus.BAD_REQUEST).json({
+      code: HttpStatus.BAD_REQUEST,
+      message: `${error}`
+    });
+  }
+};
