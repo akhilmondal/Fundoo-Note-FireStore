@@ -68,3 +68,16 @@ export const archiveNoteById = async (id, body) => {
     return updatedNote;
   }
 };
+
+//Trash note
+export const trashNoteById = async (id, body) => {
+  const docSnapshot = await Note.doc(id).get();
+  const data = noteModel.getNoteFromFirestore(docSnapshot);
+  if (data) {
+    let updatedTrash = data.trash == false ? true : false;
+    await Note.doc(id).update({ trash: updatedTrash });
+    const docSnapshot = await Note.doc(id).get();
+    const updatedNote = noteModel.getNoteFromFirestore(docSnapshot);
+    return updatedNote;
+  }
+};

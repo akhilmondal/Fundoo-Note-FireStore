@@ -19,4 +19,6 @@ router.get('', userAuth, NoteController.getAllNotes);
 //archive note by id
 router.put('/archive/:_id', userAuth, NoteController.archiveNoteById);
 
+//trash note by id
+router.put('/trash/:_id', userAuth, NoteController.trashNoteById);
 export default router;

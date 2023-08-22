@@ -58,3 +58,9 @@ info: ::1 - - [22/Aug/2023:02:43:18 +0000] "PUT /api/v1/notes/archive/AvwOkgGfVP
 
 info: ::1 - - [22/Aug/2023:02:43:20 +0000] "PUT /api/v1/notes/archive/AvwOkgGfVPALhxgEfIfd HTTP/1.1" 200 223 "-" "PostmanRuntime/7.32.3"
 
+info: ::1 - - [22/Aug/2023:02:51:12 +0000] "PUT /api/v1/notes/trash/AvwOkgGfVPALhxgEfIfd HTTP/1.1" 200 221 "-" "PostmanRuntime/7.32.3"
+
+info: ::1 - - [22/Aug/2023:02:51:25 +0000] "PUT /api/v1/notes/trash/AvwOkgGfVPALhxgEfIfd HTTP/1.1" 200 220 "-" "PostmanRuntime/7.32.3"
+
+info: ::1 - - [22/Aug/2023:02:51:28 +0000] "PUT /api/v1/notes/trash/AvwOkgGfVPALhxgEfIfd HTTP/1.1" 200 221 "-" "PostmanRuntime/7.32.3"
+
