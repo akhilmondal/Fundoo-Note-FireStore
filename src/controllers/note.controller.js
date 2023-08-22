@@ -59,3 +59,20 @@ export const deleteNoteById = async (req, res, next) => {
     });
   }
 };
+
+//Controller to get all notes
+export const getAllNotes = async (req, res, next) => {
+  try {
+    const data = await NoteService.getAllNotes(req.body);
+    res.status(HttpStatus.OK).json({
+      code: HttpStatus.OK,
+      data: data,
+      message: 'All Notes fetched successfully'
+    });
+  } catch (error) {
+    res.status(HttpStatus.BAD_REQUEST).json({
+      code: HttpStatus.BAD_REQUEST,
+      message: `${error}`
+    });
+  }
+};
