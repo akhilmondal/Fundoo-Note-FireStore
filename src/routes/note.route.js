@@ -13,4 +13,7 @@ router.put('/:_id', userAuth, NoteController.updateNoteById);
 //delete note by Id
 router.delete('/:_id', userAuth, NoteController.deleteNoteById);
 
+//route to get all note
+router.get('', userAuth, NoteController.getAllNotes);
+
 export default router;

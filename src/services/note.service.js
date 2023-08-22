@@ -1,5 +1,7 @@
 import { Note } from '../config/firestore';
 import noteModel from '../models/note.model';
+import firebase from 'firebase';
+const db = firebase.firestore();
 
 //Service for create note
 export const newNote = async (
@@ -36,6 +38,20 @@ export const updateNoteById = async (id, body) => {
 
 //service to delete note
 export const deleteNoteById = async (id) => {
-  await Note.doc(id).delete(); 
+  await Note.doc(id).delete();
   return '';
+};
+
+//service to get note of user
+export const getAllNotes = async (body) => {
+  const collectionRef = db.collection('Note');
+  const querySnapshot = await collectionRef
+    .where('createdBy', '==', body.createdBy)
+    .get();
+  const notes = [];
+  querySnapshot.forEach((doc) => {
+    const noteData = doc.data();
+    notes.push(noteData);
+  });
+  return notes;
 };
