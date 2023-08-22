@@ -55,3 +55,16 @@ export const getAllNotes = async (body) => {
   });
   return notes;
 };
+
+//Archive note
+export const archiveNoteById = async (id, body) => {
+  const docSnapshot = await Note.doc(id).get();
+  const data = noteModel.getNoteFromFirestore(docSnapshot);
+  if (data) {
+    let updatedArchive = data.archive == false ? true : false;
+    await Note.doc(id).update({ archive: updatedArchive });
+    const docSnapshot = await Note.doc(id).get();
+    const updatedNote = noteModel.getNoteFromFirestore(docSnapshot);
+    return updatedNote;
+  }
+};
